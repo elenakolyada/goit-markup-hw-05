@@ -137,9 +137,17 @@ ol {
   text-align: center;
   border: 1px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   margin: auto;
+  transition: var(--typical-duration) var(--typical-timing-function);
 }
 
+.button-blue-hero:hover,
+.button-blue-hero:focus {
+  background-color: var(--accent-color);
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +189,7 @@ ol {
   width: 370px;
   justify-content: space-between;
   margin-right: 30px;
+  position: relative;
 }
 .list-image:nth-child(3n) {
   margin-right: 0;
@@ -199,6 +208,29 @@ ol {
 }
 .list-team:nth-child(4n) {
   margin-right: 0;
+}
+.link-image {
+  text-decoration: none;
+}
+.text-image {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 .container-elements {
   display: block;
@@ -533,6 +565,7 @@ ol {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  transition: var(--typical-duration) var(--typical-timing-function);
 }
 .logo-footer {
   margin-bottom: 20px;
